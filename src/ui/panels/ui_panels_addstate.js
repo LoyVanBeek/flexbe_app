@@ -119,7 +119,11 @@ UI.Panels.AddState = new (function() {
 			state_div.addEventListener('click', function() {
 				document.getElementById('add_state_class').value = this.getAttribute("value");
 			});
-			addHoverDetails(state_div, state_def);
+			try {
+				addHoverDetails(state_div, state_def);
+			} catch(error){ 
+				console.log(error)
+			}
 
 			panel_class_select.appendChild(state_div);
 		}
