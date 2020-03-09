@@ -11,7 +11,7 @@
 
 <node name="behavior_mirror" pkg="flexbe_mirror" type="behavior_mirror_sm" output="screen" />
 
-<node name="flexbe_app" pkg="flexbe_app" type="run_app" args="$(arg offline_arg)" output="screen" unless="$(arg no_app)" />
+<node name="flexbe_app" pkg="flexbe_app" type="run_app" args="$(arg offline_arg) --enable-logging=stderr" output="screen" unless="$(arg no_app)" />
 
 <node name="behavior_launcher" pkg="flexbe_widget" type="be_launcher" output="screen" />
 
