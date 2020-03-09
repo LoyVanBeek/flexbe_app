@@ -142,6 +142,8 @@ State = function(state_name, state_def) {
 	var parameters = state_def.getParameters().clone();
 	var parameter_values = state_def.getDefaultParameterValues().clone();
 
+	console.log("LOY DEBUG: "+state_class);
+	console.log("LOY DEBUG: "+state_def.getOutcomes());
 	var outcomes = state_def.getOutcomes().filter(noMetaFilter);
 	var autonomy = state_def.getDefaultAutonomy().clone();
 

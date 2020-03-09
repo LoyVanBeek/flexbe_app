@@ -14,6 +14,8 @@ WS.StateDefinition = function(state_class, state_desc, state_path, parameters, o
 	var class_vars = class_vars;
 	var file_path = undefined;
 
+	console.log("Class: " + state_class + "outcomes: " + outcomes);
+
 	this.setFilePath = function(_file_path) { file_path = _file_path; }
 
 
