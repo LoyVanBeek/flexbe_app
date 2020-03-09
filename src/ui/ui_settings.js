@@ -1,6 +1,7 @@
 UI.Settings = new (function() {
 	var that = this;
 
+	chrome.storage.local.clear()
 	var App = require('nw.gui').App;
 
 	var ros_pkg_cache;
